@@ -1,0 +1,3 @@
+docker buildx build . -t webapp_ubuntu:1.0 -f simple_web_app
+
+docker runp 5000:5000 -n webapp_test -it webapp_ubuntu:1.0
